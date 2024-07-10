@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".relativeMainActivity2">
+<TextView
+    android:layout_width="match_parent"
+    android:ellipsize="marquee"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:textStyle="bold"
+    android:fontFamily="@font/caveat_brush"
+    android:gravity="center"
+    android:scrollHorizontally="true"
+    android:text="login  "
+    android:id="@+id/text"
+    android:textSize="70dp"/>
+  <ImageView
+      android:layout_width="300dp"
+      android:layout_height="200dp"
+      android:id="@+id/girl"
+      android:layout_below="@+id/text"
+      android:adjustViewBounds="true"
+    android:layout_marginTop="50dp"
+      android:layout_centerHorizontal="true"
+      android:contentDescription="TODO"
+      android:scaleType="fitXY"
+      android:src="@drawable/girl"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/girl"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:inputType="text"
+        android:hint="name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"/>
+    <EditText
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="email"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name1"
+        android:text="login"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"/>
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:layout_below="@+id/name"
+
+      android:layout_alignLeft="@+id/name1"
+
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="18dp"
+      android:layout_marginTop="35dp"
+      android:adjustViewBounds="true"
+      app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</RelativeLayout>

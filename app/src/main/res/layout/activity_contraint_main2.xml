@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+
+    android:background="#bcc5fc"
+    android:layout_height="match_parent"
+    tools:context=".contraintMainActivity2">
+   <TextView
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:text="login"
+       android:textSize="80dp"
+       android:textStyle="bold"
+android:textColor="#ffff"
+       android:fontFamily="@font/caveat_brush"
+       app:layout_constraintRight_toRightOf="@+id/image"
+       app:layout_constraintLeft_toLeftOf="@+id/image"
+       app:layout_constraintTop_toTopOf="parent"
+
+       android:gravity="center"
+       />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+
+        android:adjustViewBounds="true"
+        android:src="@drawable/girl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name1"
+
+        android:layout_marginTop="40dp"
+        android:hint="Name"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:gravity="center"
+        android:padding="20dp"
+
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/image"
+        app:layout_constraintRight_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name2"
+
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:padding="20dp"
+
+
+
+        app:layout_constraintLeft_toLeftOf="@+id/image"
+        app:layout_constraintRight_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@+id/image"
+        app:layout_constraintRight_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/name2"
+        android:text="Login"
+        android:textStyle="bold"
+    android:background="@drawable/imagebg"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
